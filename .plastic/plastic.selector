@@ -1,0 +1,3 @@
+repository "Idle Beyond/Idle Beyond@18968218251511@cloud"
+  path "/"
+    smartbranch "/main/AUTOMATION"
