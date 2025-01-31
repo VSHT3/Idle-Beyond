@@ -1083,7 +1083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 66.32125, y: -658.2384}
+  m_AnchoredPosition: {x: 66.32125, y: -255.33679}
   m_SizeDelta: {x: 292.6425, y: 33.316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &103389897
@@ -1512,6 +1512,7 @@ MonoBehaviour:
     mantissa: 1
     exponent: 1
   gameManager: {fileID: 661838946}
+  entropyGainInterval: 1
   upgradeLevel6:
     mantissa: 0
     exponent: 0
@@ -3215,7 +3216,7 @@ GameObject:
   - component: {fileID: 371001490}
   - component: {fileID: 371001489}
   m_Layer: 5
-  m_Name: test
+  m_Name: TestButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14712,7 +14713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -26.528496, y: 717.92755}
+  m_AnchoredPosition: {x: -26.528496, y: 441.03635}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1664561293
@@ -15674,6 +15675,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775017864}
   m_CullTransparentMesh: 1
+--- !u!1 &1777928297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1777928299}
+  - component: {fileID: 1777928298}
+  m_Layer: 0
+  m_Name: NebulaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1777928298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777928297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ee67a6728324de5be91c5bb72fbba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 661838946}
+  passiveUpgrade: {fileID: 128520562}
+  NBConvertPrice:
+    mantissa: 1
+    exponent: 3
+  NebulaPoints:
+    mantissa: 0
+    exponent: 0
+  NBConvertButton: {fileID: 103389897}
+  NB1UpgradeButton: {fileID: 371001489}
+  NebulaPointsText: {fileID: 1664561293}
+  NBConvertPriceText: {fileID: 2113200147}
+--- !u!4 &1777928299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777928297}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 544.88477, y: 534.80365, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1805336072
 GameObject:
   m_ObjectHideFlags: 0
@@ -18650,7 +18707,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Convert 1.00K to 1 NB
+  m_text: "Convert 1.00K \u03BB to 1 NB"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19425,3 +19482,4 @@ SceneRoots:
   - {fileID: 798755938}
   - {fileID: 1064648831}
   - {fileID: 2034924610}
+  - {fileID: 1777928299}
