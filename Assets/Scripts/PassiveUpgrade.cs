@@ -39,7 +39,7 @@ public class PassiveUpgrade : MonoBehaviour
 
     public GameManager gameManager; // Reference to your GameManager script
 
-    private float entropyGainInterval = 1f; // Time interval for passive entropy gain
+    public float entropyGainInterval = 1f; // Time interval for passive entropy gain
     private int entropyGainAmount = 1; // Amount of entropy gained per interval
     private float nextEntropyGainTime = 0f; // Time for the next entropy gain
 
@@ -473,7 +473,7 @@ public class PassiveUpgrade : MonoBehaviour
         }
     }
 
-    void BuyExponentUpgrade1()
+    public void BuyExponentUpgrade1()
     {
         if (gameManager.entropy >= exponentUpgradeCost1)
         {

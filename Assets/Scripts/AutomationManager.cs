@@ -34,7 +34,7 @@ public class AutomationManager : MonoBehaviour
         // Check if the autobuyer is active and the cooldown has elapsed
         if (Time.time >= autobuyerCooldownNow && autobuyerToggle.isOn)
         {
-            passiveUpgrade.BuyUpgrade20();
+            passiveUpgrade.BuyExponentUpgrade1();
             passiveUpgrade.UpdateUI();
             autobuyerCooldownNow = Time.time + autobuyerCooldown;
         }

@@ -19,6 +19,9 @@ public class TabManager : MonoBehaviour
     public GameObject AutomationTab;
     public GameObject AutomationTabButton;
 
+    public GameObject NebulaTab;
+    public GameObject NebulaTabButton;
+
     void Start()
     {
         StartPanel.SetActive(true);
@@ -35,6 +38,9 @@ public class TabManager : MonoBehaviour
 
         AutomationTab.SetActive(false);
         AutomationTabButton.SetActive(false);
+
+        NebulaTab.SetActive(false);
+        NebulaTabButton.SetActive(false);
     }
 
     public void ShowStart()
@@ -49,6 +55,7 @@ public class TabManager : MonoBehaviour
         EntropyPanel.SetActive(true);
         AchievementsPanel.SetActive(false);
         AutomationTab.SetActive(false);
+        NebulaTab.SetActive(false);
     }
 
     public void ShowAchievements()
@@ -56,6 +63,7 @@ public class TabManager : MonoBehaviour
         EntropyPanel.SetActive(false);
         AutomationTab.SetActive(false);
         AchievementsPanel.SetActive(true);
+        NebulaTab.SetActive(false);
     }
 
     public void UnlockAchievements()
@@ -66,6 +74,7 @@ public class TabManager : MonoBehaviour
     public void UnlockAutomation()
     {
         AutomationTabButton.SetActive(true);
+        NebulaTabButton.SetActive(true);
     }
 
     public void ShowEntropyHover()
@@ -89,6 +98,7 @@ public class TabManager : MonoBehaviour
         EntropyPanel.SetActive(true);
         EntropyClickPanel.SetActive(true);
         AutomationTab.SetActive(false);
+        NebulaTab.SetActive(false);
     }
 
 
@@ -99,6 +109,7 @@ public class TabManager : MonoBehaviour
         EntropyClickPanel.SetActive(false);
         EntropyGenPanel.SetActive(true);
         AutomationTab.SetActive(false);
+        NebulaTab.SetActive(false);
     }
 
         public void ShowAutomation()
@@ -107,5 +118,16 @@ public class TabManager : MonoBehaviour
             EntropyPanel.SetActive(true);
             EntropyPanel.SetActive(false);
             AutomationTab.SetActive(true);
+            NebulaTab.SetActive(false);
         }
+
+        public void ShowNebula()
+        {
+            AchievementsPanel.SetActive(false);
+            EntropyPanel.SetActive(false);
+            EntropyPanel.SetActive(false);
+            AutomationTab.SetActive(false);
+            NebulaTab.SetActive(true);
+        }
+
 }
